@@ -148,6 +148,7 @@ ul#nav-links li a.contact:hover {
 /* School Campus Section */
 
 .campus {
+  font-family: "Montserrat", sans-serif;
   max-width: 100%;
   position: absolute;
   text-align: center;
@@ -159,8 +160,8 @@ ul#nav-links li a.contact:hover {
   grid-template-columns: repeat(2, 1fr);
 }
 .activities {
-  height: auto; 
+  height: auto;
   width: auto;
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 500px;
 }
