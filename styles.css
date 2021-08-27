@@ -44,15 +44,17 @@ nav {
 }
 ul#nav-links li {
   display: inline-block;
+  justify-content: space-between;
 }
 ul#nav-links li a {
   color: #2b1f1f;
   text-decoration: none;
-  margin-left: 50px;
-  text-transform: uppercase;
-  font-weight: 300;
+  margin-left: 30px;
+  text-transform: capitalize;
+  font-weight: 100;
   font-size: 1em;
 }
+
 ul#nav-links li a:hover {
   color: #6e6565;
   font-size: 1.2em;
@@ -63,8 +65,9 @@ ul#nav-links li a.contact {
   color: #fff;
   height: auto;
   padding: 10px;
-  border-radius: 19px;
-  font-weight: bold;
+  margin-right: 4px;
+  border-radius: 15px;
+  font-weight: 300;
 }
 ul#nav-links li a.contact:hover {
   font-size: 1em;
@@ -75,7 +78,6 @@ ul#nav-links li a.contact:hover {
 .hero {
   box-sizing: border-box;
   width: 100%;
-  background-color: crimson;
   position: relative;
   background-image: linear-gradient(
       to bottom right,
@@ -89,10 +91,6 @@ ul#nav-links li a.contact:hover {
   background-size: cover;
   color: white;
   padding: 20px;
-}
-
-#hero-image {
-  max-width: 100%;
 }
 
 .hero-text {
@@ -114,10 +112,10 @@ ul#nav-links li a.contact:hover {
 }
 
 .testimonies {
-    position: absolute;
-    top: 70px;
+  position: absolute;
+  top: 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .testimonial-heading {
@@ -145,4 +143,24 @@ ul#nav-links li a.contact:hover {
 }
 .parent-name {
   font-weight: bold;
+}
+
+/* School Campus Section */
+
+.campus {
+  max-width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 1100px;
+  padding-bottom: 200px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.activities {
+  height: auto; 
+  width: auto;
+  max-width: 100%; 
+  max-height: 500px;
 }
